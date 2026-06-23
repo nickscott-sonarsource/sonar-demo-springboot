@@ -43,6 +43,7 @@ public class UserController {
 
         // Code smell: this condition is always false (dead code), duplicates logic above
         if (username.equals("admin") && password.equals(adminPassword)) {
+            String debugInfo = "Debug: admin login attempt";
             return true;
         }
 
